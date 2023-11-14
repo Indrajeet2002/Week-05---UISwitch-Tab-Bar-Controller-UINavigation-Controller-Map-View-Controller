@@ -17,63 +17,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aiE-Lw-wbH" userLabel="Button Spacer View">
-                                <rect key="frame" x="184" y="383" width="25" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="Gd1-XS-sBr"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Thinking..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dy0-dX-mHP">
-                                <rect key="frame" x="25" y="240" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thinking..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dy0-dX-mHP">
+                                <rect key="frame" x="25" y="150" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AsD-Cd-juW">
-                                <rect key="frame" x="10" y="119" width="375" height="31"/>
-                                <connections>
-                                    <action selector="switchToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="qbL-sM-ABe"/>
-                                </connections>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4or-WN-aIr">
+                                <rect key="frame" x="172" y="79" width="51" height="31"/>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzA-Yi-EDz">
-                                <rect key="frame" x="33" y="559" width="104" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Switch Off"/>
-                                <connections>
-                                    <action selector="switchOffClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wV-nq-zU9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxC-9e-7pa">
-                                <rect key="frame" x="265" y="559" width="102" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfR-Bn-QYG">
+                                <rect key="frame" x="239" y="211" width="102" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Switch On"/>
                                 <connections>
-                                    <action selector="switchOnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aqv-CV-eUh"/>
+                                    <action selector="switchOnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Go4-7l-QzU"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2j-S0-NFv">
+                                <rect key="frame" x="184" y="211" width="25" height="25"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="O56-Iv-cj7"/>
+                                    <constraint firstAttribute="height" constant="25" id="xeG-la-Mvt"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gj-sK-9TZ">
+                                <rect key="frame" x="50" y="211" width="104" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Switch Off"/>
+                                <connections>
+                                    <action selector="switchOffClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7E-mn-3bi"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AsD-Cd-juW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="32K-9Y-UiD"/>
-                            <constraint firstItem="AsD-Cd-juW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3iB-Jm-bOt"/>
-                            <constraint firstItem="aiE-Lw-wbH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5dd-q3-s6A"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AsD-Cd-juW" secondAttribute="trailing" constant="10" id="PMv-gO-wYY"/>
-                            <constraint firstItem="Dy0-dX-mHP" firstAttribute="top" secondItem="AsD-Cd-juW" secondAttribute="bottom" constant="20" id="T1I-TG-FNK"/>
+                            <constraint firstItem="v2j-S0-NFv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="85r-kD-vpo"/>
+                            <constraint firstItem="NfR-Bn-QYG" firstAttribute="top" secondItem="Dy0-dX-mHP" secondAttribute="bottom" constant="40" id="BIv-ZZ-3mK"/>
+                            <constraint firstItem="Dy0-dX-mHP" firstAttribute="top" secondItem="4or-WN-aIr" secondAttribute="bottom" constant="40" id="PJt-cU-G16"/>
+                            <constraint firstItem="NfR-Bn-QYG" firstAttribute="leading" secondItem="v2j-S0-NFv" secondAttribute="trailing" constant="30" id="T7D-KB-Xrt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dy0-dX-mHP" secondAttribute="trailing" constant="25" id="bBJ-lr-G9t"/>
+                            <constraint firstItem="v2j-S0-NFv" firstAttribute="top" secondItem="Dy0-dX-mHP" secondAttribute="bottom" constant="40" id="bVf-am-RdM"/>
+                            <constraint firstItem="5gj-sK-9TZ" firstAttribute="top" secondItem="Dy0-dX-mHP" secondAttribute="bottom" constant="40" id="d2B-e8-W4p"/>
                             <constraint firstItem="Dy0-dX-mHP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="fLF-qJ-aoe"/>
-                            <constraint firstItem="aiE-Lw-wbH" firstAttribute="top" secondItem="Dy0-dX-mHP" secondAttribute="bottom" constant="10" id="gCw-to-gmc"/>
-                            <constraint firstItem="EzA-Yi-EDz" firstAttribute="top" secondItem="Dy0-dX-mHP" secondAttribute="bottom" constant="20" id="jKz-14-gtr"/>
-                            <constraint firstItem="YxC-9e-7pa" firstAttribute="leading" secondItem="EzA-Yi-EDz" secondAttribute="trailing" id="t1W-WY-ZLR"/>
+                            <constraint firstItem="4or-WN-aIr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gPg-dk-HHo"/>
+                            <constraint firstItem="4or-WN-aIr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="qCf-Kp-bEJ"/>
                             <constraint firstItem="Dy0-dX-mHP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t5n-Px-u2o"/>
+                            <constraint firstItem="v2j-S0-NFv" firstAttribute="leading" secondItem="5gj-sK-9TZ" secondAttribute="trailing" constant="30" id="tOX-Ps-A6r"/>
+                            <constraint firstItem="v2j-S0-NFv" firstAttribute="leading" secondItem="5gj-sK-9TZ" secondAttribute="trailing" constant="30" id="wao-hi-DUQ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Switch" image="switch.2" catalog="system" id="1rN-kj-WD4"/>
                     <connections>
-                        <outlet property="mySwitch" destination="AsD-Cd-juW" id="Qes-jN-lIc"/>
-                        <outlet property="switchOffButton" destination="EzA-Yi-EDz" id="sjN-0n-pqI"/>
-                        <outlet property="switchOnButton" destination="YxC-9e-7pa" id="HNb-hK-pE4"/>
+                        <outlet property="switchOffButton" destination="5gj-sK-9TZ" id="8Mh-zM-xgW"/>
+                        <outlet property="switchOnButton" destination="NfR-Bn-QYG" id="jfB-Ec-E7W"/>
                         <outlet property="switchStatusLabel" destination="Dy0-dX-mHP" id="9a7-9z-xCd"/>
                     </connections>
                 </viewController>
