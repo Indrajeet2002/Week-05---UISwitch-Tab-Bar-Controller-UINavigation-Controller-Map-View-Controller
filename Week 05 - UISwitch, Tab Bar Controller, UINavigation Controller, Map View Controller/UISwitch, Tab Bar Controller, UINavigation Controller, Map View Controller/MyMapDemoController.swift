@@ -32,7 +32,7 @@ class MyMapDemoController: UIViewController {
         
         self.mapView.camera.altitude = 1000
         
-        
+        print("CSUF!")
     }
     
 }

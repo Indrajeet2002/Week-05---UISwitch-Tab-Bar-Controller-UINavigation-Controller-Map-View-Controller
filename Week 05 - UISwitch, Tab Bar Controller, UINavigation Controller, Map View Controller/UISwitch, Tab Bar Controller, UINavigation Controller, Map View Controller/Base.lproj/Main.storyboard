@@ -71,6 +71,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Switch" image="switch.2" catalog="system" id="1rN-kj-WD4"/>
                     <connections>
+                        <outlet property="mySwitch" destination="4or-WN-aIr" id="jbl-8b-nx2"/>
                         <outlet property="switchOffButton" destination="5gj-sK-9TZ" id="8Mh-zM-xgW"/>
                         <outlet property="switchOnButton" destination="NfR-Bn-QYG" id="jfB-Ec-E7W"/>
                         <outlet property="switchStatusLabel" destination="Dy0-dX-mHP" id="9a7-9z-xCd"/>
@@ -112,7 +113,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="globe" catalog="system" id="feP-oO-oPS"/>
                     <connections>
-                        <outlet property="csufButton" destination="H8C-kM-FJZ" id="E1b-Id-lzS"/>
+                        <outlet property="csufButton" destination="H8C-kM-FJZ" id="cJK-40-Hp4"/>
                         <outlet property="mapView" destination="QgZ-Hd-8xt" id="Rly-rm-hZS"/>
                     </connections>
                 </viewController>
